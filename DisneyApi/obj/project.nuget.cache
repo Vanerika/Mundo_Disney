@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wu+0EqBODauZl60eFiQEGtqA7TmJcyIhvijZTdAuHmRqDSH+99kpeFZhvjggi0bBYJsSmqJpOFNrXWyfpVGJ6w==",
+  "dgSpecHash": "zJk34gJh607k18nz0pzJuSiUnqjWsAVS5Don9vdNfckJcpogcywg9x3TfTbxuho+kW/mEIaGrPKEKik23tKT5A==",
   "success": true,
   "projectFilePath": "E:\\Programación\\Alkemy\\Mundo_Disney\\DisneyApi\\DisneyApi.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.linq.dynamic.core\\1.2.14\\system.linq.dynamic.core.1.2.14.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

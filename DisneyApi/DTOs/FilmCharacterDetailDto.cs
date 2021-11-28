@@ -5,12 +5,9 @@ using System.Threading.Tasks;
 
 namespace DisneyApi.DTOs
 {
-    public class FilterFilmDto
+    public class FilmCharacterDetailDto
     {
+        public int FilmId { get; set; }
         public string Title { get; set; }
-        public int GenreId { get; set; }
-
-        public string Order { get; set; }
-        public DateTime Creation_Date { get; set; }
     }
 }

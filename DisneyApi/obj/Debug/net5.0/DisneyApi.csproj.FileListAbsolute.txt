@@ -112,3 +112,4 @@ E:\Programación\Alkemy\Mundo_Disney\DisneyApi\obj\Debug\net5.0\DisneyApi.dll
 E:\Programación\Alkemy\Mundo_Disney\DisneyApi\obj\Debug\net5.0\ref\DisneyApi.dll
 E:\Programación\Alkemy\Mundo_Disney\DisneyApi\obj\Debug\net5.0\DisneyApi.pdb
 E:\Programación\Alkemy\Mundo_Disney\DisneyApi\obj\Debug\net5.0\DisneyApi.genruntimeconfig.cache
+E:\Programación\Alkemy\Mundo_Disney\DisneyApi\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll

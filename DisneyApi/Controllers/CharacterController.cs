@@ -37,16 +37,18 @@ namespace DisneyApi.Controllers
         }
 
         [HttpGet("{id}", Name = "obtenerPersonaje")]
-        public async Task<ActionResult<CharacterDto>> Get(int id)
+        public async Task<ActionResult<CharacterDetailDto>> Get(int id)
         {
-            var entidad = await context.Characters.FirstOrDefaultAsync(x => x.Id == id);
+            var entidad = await context.Characters
+                .Include(x=>x.CharactersFilms).ThenInclude(x=>x.Film)
+                .FirstOrDefaultAsync(x => x.Id == id);
 
             if (entidad == null)
             {
                 return NotFound();
             }
 
-            return mapper.Map<CharacterDto>(entidad);
+            return mapper.Map<CharacterDetailDto>(entidad);
         }
 
 

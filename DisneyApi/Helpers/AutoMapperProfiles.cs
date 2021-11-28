@@ -21,6 +21,9 @@ namespace DisneyApi.Helpers
             CreateMap<CharacterCreationDto, Character>()
                .ForMember(x => x.Imagen, options => options.Ignore());
 
+            CreateMap<Character, CharacterDetailDto>()
+                .ForMember(x => x.Films, options => options.MapFrom(MapCharacterFilm));
+
             CreateMap<Film, FilmDto>().ReverseMap();
             CreateMap<Film, ListFilmsDto>().ReverseMap();
 
@@ -47,6 +50,17 @@ namespace DisneyApi.Helpers
             foreach (var genero in film.FilmsGenres)
             {
                 result.Add(new GenreDto() { Id = genero.GenreId, Name = genero.Genre.Name });
+            }
+            return result;
+        }
+
+        private List<FilmCharacterDetailDto> MapCharacterFilm(Character character, CharacterDetailDto characterDetail)
+        {
+            var result = new List<FilmCharacterDetailDto>();
+            if (character.CharactersFilms == null) { return result; }
+            foreach (var film in character.CharactersFilms)
+            {
+                result.Add(new FilmCharacterDetailDto() { FilmId = film.FilmId, Title = film.Film.Title });
             }
             return result;
         }
